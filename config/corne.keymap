@@ -42,7 +42,7 @@
 &kp DEL          &kp Q        &kp W       &kp E            &kp R             &kp T              &kp Y        &kp U         &kp I                     &kp O       &kp P           &kp LEFT_BRACKET
 &mt LGUI TAB     &mt LCTRL A  &mt LALT S  &mt LEFT_GUI D   &mt LEFT_SHIFT F  &kp G              &kp H        &mt RSHIFT J  &mt RGUI K                &mt RALT L  &mt RCTRL SEMI  &kp SQT
 &kp NON_US_BSLH  &kp Z        &kp X       &kp C            &kp V             &kp B              &kp N        &kp M         &kp COMMA                 &kp DOT     &kp FSLH        &kp NON_US_HASH
-                                          &lt 5 LA(SPACE)  &lt 3 ESC         &lt 2 BACKSPACE    &lt 1 SPACE  &lt 4 ENTER   &sk LS(LA(LC(LG(RALT))))
+                                          &lt 0 LA(SPACE)  &lt 0 ESC         &lt 2 BACKSPACE    &lt 1 SPACE  &lt 0 ENTER   &sk LS(LA(LC(LG(RALT))))
             >;
         };
 
@@ -63,42 +63,18 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &trans        &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT       &kp LS(LG(NUMBER_4))    &kp LG(LEFT_ARROW)  &kp LA(LEFT)    &kp PAGE_UP    &kp LA(RIGHT)  &kp LG(RIGHT)  &trans
-&trans      &trans        &kp C_VOL_DN  &kp C_MUTE        &kp C_VOLUME_UP  &kp CAPS                &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT      &trans         &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3     &bt BT_SEL 4            &trans              &trans          &kp PAGE_DOWN  &trans         &trans         &trans
-                                        &trans            &trans           &none                   &trans              &kp LS(ENTER)   &trans
+&trans        &trans        &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT       &kp LS(LG(NUMBER_4))    &kp LG(LEFT_ARROW)  &kp LA(LEFT)    &kp PAGE_UP    &kp LA(RIGHT)  &kp LG(RIGHT)  &trans
+&out OUT_TOG  &trans        &kp C_VOL_DN  &kp C_MUTE        &kp C_VOLUME_UP  &kp CAPS                &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT      &trans         &trans
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3     &bt BT_SEL 4            &trans              &trans          &kp PAGE_DOWN  &trans         &trans         &trans
+                                          &trans            &trans           &none                   &trans              &kp LS(ENTER)   &trans
             >;
         };
 
-        Numbers {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+        Num {
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &out OUT_TOG    &trans    &trans    &trans    &trans     &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
-            >;
-        };
-
-        Functions {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        Media {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
