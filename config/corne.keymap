@@ -21,6 +21,8 @@
     flavor = "balanced";
 };
 
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE SLASH FSLH>; };
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -28,15 +30,6 @@
         caps_word {
             bindings = <&caps_word>;
             key-positions = <16 19>;
-        };
-    };
-
-    behaviors {
-        caps_word_behavior: caps_word_behavior {
-            compatible = "zmk,behavior-caps-word";
-            label = "CAPS_WORD_BEHAVIOR";
-            #binding-cells = <0>;
-            continue-list = <UNDERSCORE MINUS DELETE BACKSPACE>;
         };
     };
 
