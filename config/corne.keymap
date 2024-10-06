@@ -31,6 +31,11 @@
             bindings = <&caps_word>;
             key-positions = <16 19>;
         };
+
+        toggle_gaming_layer {
+            bindings = <&tog 4>;
+            key-positions = <0 24>;
+        };
     };
 
     keymap {
@@ -81,6 +86,15 @@
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        gaming {
+            bindings = <
+&trans  &kp TAB    &kp Q  &kp W     &kp E     &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHFT  &kp A  &kp S     &kp D     &kp F        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LCTRL  &kp Y  &kp X     &kp C     &kp V        &trans  &trans  &trans  &trans  &trans  &trans
+                          &kp LALT  &kp LGUI  &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
