@@ -32,13 +32,13 @@
             key-positions = <16 19>;
         };
 
-        toggle_gaming_layer {
-            bindings = <&tog 4>;
+        to_qwertz {
+            bindings = <&to 0>;
             key-positions = <0 24>;
         };
 
-        toggle_colemak {
-            bindings = <&tog 5>;
+        to_colemak {
+            bindings = <&to 4>;
             key-positions = <11 35>;
         };
     };
@@ -91,15 +91,6 @@
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0   &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        gaming {
-            bindings = <
-&kp ESC  &kp TAB    &kp Q  &kp W     &kp E     &kp R        &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp LSHFT  &kp A  &kp S     &kp D     &kp F        &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp LCTRL  &kp Y  &kp X     &kp C     &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                           &kp LALT  &kp LGUI  &kp SPACE    &trans  &trans  &trans
             >;
         };
 
