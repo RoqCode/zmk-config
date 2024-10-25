@@ -32,13 +32,8 @@
             key-positions = <16 19>;
         };
 
-        to_qwertz {
-            bindings = <&to 0>;
-            key-positions = <0 24>;
-        };
-
         to_colemak {
-            bindings = <&to 4>;
+            bindings = <&tog 4>;
             key-positions = <11 35>;
         };
     };
