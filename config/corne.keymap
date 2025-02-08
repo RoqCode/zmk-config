@@ -28,25 +28,21 @@
         hrm_left: hrm_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-unless-interrupted";
             tapping-term-ms = <150>;
             quick-tap-ms = <250>;
-            require-prior-idle-ms = <125>;
-            hold-trigger-key-positions = <13 14 15 16>;
-            hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
 
             label = "HRM_LEFT";
+            hold-trigger-key-positions = <13 14 15 16>;
         };
 
         hrm_right: hrm_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-unless-interrupted";
             tapping-term-ms = <150>;
             quick-tap-ms = <250>;
-            require-prior-idle-ms = <125>;
-            hold-trigger-on-release;
             bindings = <&kp>, <&kp>;
 
             label = "HRM_RIGHT";
